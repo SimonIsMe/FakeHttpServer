@@ -21,18 +21,17 @@ Returns JSON with all historical requests to the server. For example:
     "method": "GET",
     "endpoint": "/users",
     "headers": [],
-    "body": ""
+    "body": {}
   },
   {
     "method": "POST",
     "endpoint": "/login",
     "headers": [],
     "body": "Lorem ipsum dolorem sit ament..."
-  },
-  ...
+  }
 ]
 ```
 
 **DELETE /history**
 
-Delete all historical request to the server.
+Delete all historical requests to the server.
