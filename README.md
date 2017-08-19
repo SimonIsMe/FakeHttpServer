@@ -12,6 +12,22 @@ docker run -it -p="80:80" ss:FakeHttpServer
 
 ## Endpoints
 
+**PUT /configure-endpoint** - it sets (or overrides) body which will be returned
+Body:
+```json
+{
+  "endpoint": "/abc/def",
+  "method": "POST",
+  "returnHttpCode": 200,
+  "returnBody": "..."
+}
+```
+
+**DELETE /configure-endpoint** 
+
+It deletes all configured endpoint
+
+
 **GET /history**
 
 Returns JSON with all historical requests to the server. For example:
